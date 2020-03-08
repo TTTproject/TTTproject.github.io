@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display=swap');
+
+
+
+
+div#info {
+	height: 0px; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    background-color: #393838; 
+    opacity: 1;
+    z-index : 3;
+}
+
+#img_link {
+  height: 30px;
+  width: auto;
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+  border-radius: 4px;
+
+}
+
+
+div#loading {
+	  background-image: url("https://tttproject.github.io/documentation/images/black_denim.jpg");
+  z-index: 3;	
+ height: 100%;
+width:100%;
+}
+
+
+.open{
+	transition: 0.5s;
+}
+.dropdown-menu, .dropdown {
+	transition: 0.5s;
+}
+@media (min-width:300px){
+div#btn-sx.col-sm-2{
+	top:35px;
+	max-width:40px;
+	}
+	div#btn-dx.col-sm-2{
+		max-width:40px;
+
+				left: 170px;
+	top: 0px;
+	}
+}
+@media (min-width:400px){
+			div#btn-sx.col-sm-2{
+				max-width:200px;
+	top:60px;
+	left:20px;}
+	div.col-sm-5{
+		margin-right:50px ;
+		width:20% ;
+		float: right;
+	}
+		div#btn-dx.col-sm-2{
+	float:left;
+				left: 50px;
+	top: 100px;
+			max-width:200px;
+	}
+}
+@media (min-width:500px){
+		div#btn-sx.col-sm-2{
+	top:60px;
+	left:20px;
+	max-width:200px;}
+	div.col-sm-5{
+		margin-right:50px ;
+		width:20% ;
+		float: right;
+	}
+		div#btn-dx.col-sm-2{
+	float:left;
+	left: 50px;
+	top: 100px;
+			max-width:200px;
+	}
+}
+@media (min-width:600px){
+
+	
+	div#btn-sx.col-sm-2{
+	margin-left:150px;
+	top:0px;}
+	div#btn-dx.col-sm-2{
+	float:right;
+		margin-right:150px;
+		bottom: 40px;
+		top:-40px;
+	}
+	
+	div.col-sm-5 {
+		width: 80%;
+		left: 0px;
+		float:left;
+	}
+}
+
+@media (min-width: 800px){
+		div#btn-sx.col-sm-2{
+	margin-left:150px;
+	top:0px;}
+	div#btn-dx.col-sm-2{
+	float:right;
+		margin-right:150px;
+		bottom:0px;
+		left: 60px;
+		top:0px;
+	}
+	div.col-sm-5 {right:0px;
+		width: 80%;
+		height: auto;
+		left: 0;
+		float:left;
+	}
+}
+@media (min-width: 1000px){		div#btn-sx.col-sm-2{
+	margin-left:0px;
+	top:0px;}
+	div#btn-dx.col-sm-2{
+			bottom:0px;
+	float:right;
+		margin-right:0px;
+		top:0px;
+	}
+	
+	div.col-sm-5 {
+		left: 110px;
+		width: 50%;
+		height: auto;
+		float:left;
+	}
+}
+
+
+@media (min-width: 1200px){		div#btn-sx.col-sm-2{
+	margin-left:0px;
+	top:0px;
+	}
+	div#btn-dx.col-sm-2{
+	float:right;
+			bottom:0px;
+		margin-right:0px;
+		top:0px;
+	}
+	div.col-sm-5 {
+		left: 120px;
+		width: 40%;
+		height: auto;
+		float:left;
+	}
+}
+
+
+@media (min-width: 1400px){		div#btn-sx.col-sm-2{
+	margin-left:0px;
+	top:0px;}
+	div#btn-dx.col-sm-2{
+	float:right;
+		top:0px;
+		bottom:0px;
+		margin-right:0px;
+	} div.col-sm-5{
+		margin-left: 150px;
+		margin-top: 10px;
+		float:left;
+}
+	div.col-sm-2 {
+		margin-top:15px;
+		top:0px;
+	}
+}
+html {
+    height: 100%;
+}
+body{
+	background-image: linear-gradient( #2F87BF, #b5d1ff) !important;
+
+ height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+}
+header{
+	width: 100%;
+	height: auto;
+	background-color: #2b2d3b;
+	color: white;
+}
+
+.btn-primary {
+	transition: 0.5s;
+}
+
+
+#content{
+  width: 100%;
+  height: 90%;
+
+}
+
+ul{
+	list-style: none;
+}
+.dropdown{
+  margin-top: 7%;
+}
+#menu ul li{
+	float: right;
+	transition: 0.5s;
+}
+#menu ul li a {
+transition: 0.5s;
+}
+#menu li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Raleway;
+
+}
+
+#menu ul:hover li:not(:hover) {
+  opacity: 0.3;
+}
+
+/* Change the link color to #111 (black) on hover */
+#menu ul li a:hover {
+  
+   cursor: pointer; 
+   text-decoration: none;
+   
+	
+
+}
+/*.glyphicon 
+{
+margin-top: 1%;
+color: white !important;
+}
+/*#nav{
+	width: 15%;
+	background-color: #000000;
+	color: white !important;
+	-webkit-font-smoothing: antialiased;
+}
+#nav li:hover{
+	background-color: #7c7e82;
+	cursor: pointer;
+	text-decoration: none;
+}
+#nav ul li{
+  display: block;
+  color: white;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+
+}
+/*#active{
+	background-color:  #2B79AB
+}
+#nav a{
+	margin-left: 30;
+	text-decoration: underline;
+	font-weight: bold;
+	display: block;
+  	color: white;
+  	 text-decoration: none;
+  	font-family: Raleway;
+}
+#nav a:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+  	/* The sidebar menu */
+/*.sidebar {
+  height: 100%; /* 100% Full-height */
+ /* width: 0; /* 0 width - change this with JavaScript */
+  /*position: fixed; /* Stay in place */
+ /* z-index: 1; /* Stay on top */
+ /* top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+ /* overflow-x: hidden; /* Disable horizontal scroll */
+  /*padding-top: 60px; /* Place content 60px from the top */
+  /* transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+
+
+/* Position and style the close button (top right corner) */
+/*.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+/*.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/*main content */
+/*.main{
+	text-align: center;
+	margin-top: 200px;
+	margin-left: 300px;
+	margin-right: 100px;
+	position: fixed !important;
+	color: white;
+	font-size: 25px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+ font-style: italic;
+
+
+}
+
+@media screen and (max-height: 450px) {
+  .main {position: fixed;}
+
+}

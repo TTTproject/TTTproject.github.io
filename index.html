@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <link rel="stylesheet" type="text/css" href="style/home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/home.js"></script>
+ </head>
+ <body style="overflow:hidden">
+
+ 	<header> 
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-2" id="btn-sx">
+    <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Pages
+
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+	       <li><a href="#" onclick="changeHtml('https://tttproject.github.io/docs/bloomberg/index.html', 'https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women', asyncChangeCss)">Bloomberg</a></li>
+<!--	    <li><a href="docs/bloomberg/index.html" target="targetframe">Bloomberg</a></li> -->
+	 <li><a href="#" onclick="changeHtml('https://tttproject.github.io/docs/harpers/Harpers_Final.html', 'https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation',asyncChangeCss)">Harpers</a></li>
+      <li><a href="#" onclick="changeHtml('https://tttproject.github.io/docs/huffington/Huffington_Final.html', 'https://highline.huffingtonpost.com/articles/en/lotto-winners/',asyncChangeCss)">Huffington</a></li>
+<li><a href="#" onclick="changeHtml('https://tttproject.github.io/docs/thecut/thecut.html','https://www.thecut.com/2018/05/how-anna-delvey-tricked-new-york.html', asyncChangeCss)">The Cut</a></li>
+   <li><a href="#" onclick="changeHtml('https://tttproject.github.io/docs/tls/TimesLiterarySupplement_Final.html', 'https://www.the-tls.co.uk/articles/public/ridiculously-complicated-algorithms/',asyncChangeCss)">TLS</a></li>
+	    <li><a href="#" onclick="changeHtml('https://tttproject.github.io/docs/Eu_directive/eu_directive.html','https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1552167424995&uri=CELEX:32009L0041', asyncChangeCss)">EU Directive</a></li>
+	    </ul>
+  </div>
+    </div> 
+    <div class="col-sm-2" id="btn-dx">
+
+    <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Style
+    <span class="caret"></span></button> 
+    <ul class="dropdown-menu">
+      <li><a href="#" onclick="change_css('https://tttproject.github.io/style/ancient.css')">Before 1500</a></li>
+      <li><a href="#" onclick="change_css('https://tttproject.github.io/style/XIXcenturystyle.css')">XIX Century</a></li>
+      <li><a href="#" onclick="change_css('https://tttproject.github.io/style/css_primo_novecento_finale.css')">First half of the XX Century</a></li>
+      <li><a href="#" onclick="change_css('https://tttproject.github.io/style/1950style.css')">Second half of the XX Century</a></li>
+      <li><a href="#" onclick="change_css('https://tttproject.github.io/style/css_fine_novecento_finale.css')">Late XX Century</a></li>
+      <li><a href="#" onclick ="add_script('https://tttproject.github.io/style/slide.css','https://tttproject.github.io/js/new.js')">2040: the Future</a></li>
+    </ul>
+  </div></div>
+    <div class="col-sm-5">
+      <div id="menu">
+    <ul> 
+<!--      <li><a href="https://tttproject.github.io/disclaimer/disclaimer.html" target="targetframe">Disclaimer</a></li>-->
+ 	<li><a href="#" onclick="navbarChangeHtml('https://tttproject.github.io/homepage1/disclaimer.html')" >Disclaimer</a></li>
+	<li><a href="#" onclick="navbarChangeHtml('https://tttproject.github.io/homepage1/documentation.html')">Documentation</a></li>     
+  <!--    <li><a href="https://tttproject.github.io/documentation/documentation.html" target="targetframe">Documentation</a></li>-->
+ 	<li><a href="#" onclick="navbarChangeHtml('https://tttproject.github.io/homepage1/about.html')">About</a></li>
+     <li><a href="#" onclick="navbarChangeHtml('https://tttproject.github.io/homepage1/')">Home</a></li>
+
+    </ul>
+</div>
+	
+</div>
+</div>
+</div>
+
+  </header>
+
+<img src="https://tttproject.github.io/loading_img/melt-line.gif" style="height:0%;width:0%;position:absolute" id="loading"> 
+<div id="content" style="overflow:hidden">
+
+    <iframe src="https://tttproject.github.io/homepage1/" width="100%" height="100%" marginwidth=0 marginheight=0 frameborder=0 id="Iframe" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" style="overflow:hidden" >
+    </iframe>
+
+  </div>
+
+ </body>
+
+ <footer>
+	 
+    <div id="info"><a id="externalLink" target="_blank" href="#"><img id="img_link" src="loading_img/link.jpeg" ></a></div>
+
+	</footer>
+
+	 	
+</html>

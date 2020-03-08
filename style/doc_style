@@ -1,0 +1,19 @@
+div#info {
+	height: 40px; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    background-color: #393838; 
+    opacity: 1;
+    z-index : 3;
+}
+
+#img_link {
+  height: 30px;
+  width: auto;
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+  border-radius: 4px;
+
+}
